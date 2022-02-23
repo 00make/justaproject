@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+    <title>性格测试</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link href="https://cdn.bootcdn.net/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
+    <link href="https://cdn.bootcdn.net/ajax/libs/Swiper/3.3.1/css/swiper.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        html,
+        body,
+        .swiper-container,
+        .swiper-slide {
+            height: 100%;
+        }
+        .swiper-slide {
+            overflow: hidden;
+        }
+        .swiper-slide img {
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div style="max-width:640px; margin:0 auto; height:100%;">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide result">
+                    <div class="bg">
+                        <div class="mark">
+                            <div class="mjtBox">
+                                <div class="mjt">
+                                    <img src="images/755778385856302823.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="fenx">请点击右上角<br>分享给好友</div>
+                            <div><a href="http://weixin.qq.com/r/W0SZgdbEpovZrZLi9xFJ">进入公众号领优惠卷</a></div>
+                        </div>
+                        <div class="reBox">
+                            <h3><span class="animated flip"></span>，魔法转动，您对应的蝴蝶仙子是：</h3>
+                            <div class="huname animated flipInY">
+                                <div>
+                                </div>
+                            </div>
+                            <div class="imgBox animated rollIn">
+                                <img src="" alt="">
+                            </div>
+                            <div class="content animated bounceInUp">
+                                <div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="btnBox">
+                            <div class="again">
+                            </div>
+                            <div class=save>
+                                <a href="" download></a>
+                            </div>
+                        </div>
+                        <div class="db">
+                            <div class="code">
+                                <img src="images/QRcode.jpg" alt="">
+                            </div>
+                            <div class="wz">
+                                长按二维码关注公众号凭此图即可在活动当天领取XXX！
+                            </div>
+                        </div>
+                        <div class="jt">
+                            <div class="animated bounce"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide end">
+                    <div class="bg">
+                        <div class="luoma">
+                            <img src="images/197927189993889400.jpg" alt="">
+                        </div>
+                        <div class="huodong">
+                            <div>活动内容</div>
+                        </div>
+                        <div class="content">
+                            <span>XXX</span>文化艺术节<br>
+                        </div>
+                        <div class="content">
+                            低至<span>XXX</span>！购物<span></span>再<span>送XXX</span>！
+                        </div>
+                        <div class="huodong data">
+                            <div>时间地点</div>
+                        </div>
+                        <div class="content">
+                            时间：<span>XXX</span>日至<span>XXX</span>日<br>
+                            地点：XXX<br>
+                            咨询电话：<span>XXX</span>
+                        </div>
+                        <div class="imgBox">
+                            <div class="img1 animated bounceInLeft"></div>
+                            <div class="img2 animated bounceInRight"></div>
+                        </div>
+                        <div class="db">
+                            <div class="code">
+                                <img src="images/QRcode.jpg" alt="">
+                            </div>
+                            <div class="wz">
+                                长按二维码关注公众号凭此图即可在活动当天领取XXX！
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/html2canvas/0.4.1/html2canvas.js"></script>
+    <script src="https://cdn.bootcdn.net/ajax/libs/Swiper/3.3.1/js/swiper.min.js"></script>
+    <script src="js/data.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        Math.seed = 5;
+        Math.seededRandom = function (max, min) {
+            max = max || 1; min = min || 0;
+            Math.seed = (Math.seed * 9301 + 49297) % 233280;
+            var rnd = Math.seed / 233280.0;
+            return min + rnd * (max - min);
+        }; for (var i = 0; i < 10; i++) {
+            document.writeln(Math.seededRandom() + "<br />");
+        }
+        app.answer();
+        app.result();
+    </script>
+</body>
+</html>
