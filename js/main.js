@@ -80,10 +80,11 @@ var app = {
         //make index
         // Math.seed = name.charCodeAt(1);
         // var index = Math.floor((Math.seededRandom() * hudata.length));
-        if (score <= 10) { var index = 0; }
-        else if (score < 15) { var index = 1; }
-        else if (score < 20) { var index = 2; }
-        else { var index = 3; }
+        if (score <= 12) { var index = 0; }
+        else if (score < 14) { var index = 1; }
+        else if (score < 16) { var index = 2; }
+        else if (score < 18) { var index = 3; }
+        else { var index = 4; }
 
         console.log(hudata[index]);
         $('.imgBox img').attr('src', 'images/' + (index + 1) + '.png');

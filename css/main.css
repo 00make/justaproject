@@ -283,7 +283,7 @@ html {
 .result .bg {
     width: 100%;
     height: 100%;
-    padding-top: 2rem;
+    padding-top: 1.7rem;
     background-image: url(../images/resultbg.jpg);
     background-size: 100% 100%;
     background-repeat: no-repeat;
@@ -351,7 +351,8 @@ html {
 }
 
 .result .reBox .imgBox img {
-    width: 150%;
+    width: 130%;
+    z-index : 15 ;
 }
 
 .result .reBox .content {
@@ -359,10 +360,11 @@ html {
     margin: 0 auto;
     -webkit-overflow-scrolling: touch;
     height: 45%;
-    font-size: 0.26rem;
+    font-size: 0.25rem;
     overflow: scroll;
     color: #000000;
     animation-delay: 2s;
+    text-align: justify;
 }
 
 .result .btnBox {
