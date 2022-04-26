@@ -4,9 +4,11 @@ var app = {
             $('.mark').show();
         });
         $('.djks').click(function () {
-            var name = $('input').val();
-            window.sessionStorage.setItem('name', name);
-            location.href = './answer.html';
+            if ($('input').val()) {
+                var name = $('input').val();
+                window.sessionStorage.setItem('name', name);
+                location.href = './answer.html';
+            }
         });
     },
     answer2: function () {
@@ -17,6 +19,7 @@ var app = {
         var n = 0;
         $('.nexBtn').click(function () {
             if ($('.answerBox ul li').hasClass('active')) {
+
                 if ($("#ans0").hasClass('active')) {
                     console.log(data[n].sc[0]);
                     score += data[n].sc[0];
@@ -25,6 +28,7 @@ var app = {
                     console.log(data[n].sc[1]);
                     score += data[n].sc[1];
                 }
+
                 window.sessionStorage.setItem('score', score);
                 n++;
                 console.log(data[n]);
@@ -72,12 +76,20 @@ var app = {
         $('.mark div').click(function (event) {
             event.stopPropagation()
         });
-        Math.seed = name.charCodeAt(1);
-        var index = Math.floor((Math.seededRandom() * hudata.length));
+
+        //make index
+        // Math.seed = name.charCodeAt(1);
+        // var index = Math.floor((Math.seededRandom() * hudata.length));
+        if (score <= 10) { var index = 0; }
+        else if (score < 15) { var index = 1; }
+        else if (score < 20) { var index = 2; }
+        else { var index = 3; }
+
         console.log(hudata[index]);
         $('.imgBox img').attr('src', 'images/' + (index + 1) + '.png');
+        $('.luoma img').attr('src', 'images/' + (index + 1) + '.png');
         $('.huname div').text(hudata[index].t);
-        $('.content div').text(hudata[index].r);
+        $('.content div').html(hudata[index].r);
         $('.huodong div').text(hudata[index].t);
     },
     answer: function () {
