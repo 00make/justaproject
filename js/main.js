@@ -77,9 +77,6 @@ var app = {
             event.stopPropagation()
         });
 
-        //make index
-        // Math.seed = name.charCodeAt(1);
-        // var index = Math.floor((Math.seededRandom() * hudata.length));
         if (score <= 12) { var index = 0; }
         else if (score < 14) { var index = 1; }
         else if (score < 16) { var index = 2; }
