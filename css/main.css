@@ -303,9 +303,10 @@ html {
 
 .result .reBox h3 {
     height: 0.72rem;
+
     line-height: 0.3rem;
     /* padding: 0.21rem 0.1rem; */
-    font-size: 0.26rem;
+    font-size: 0.22rem;
     color: #000000;
     font-weight: normal;
 
@@ -315,7 +316,7 @@ html {
 .result .reBox span {
     display: inline-block;
     color: #000000;
-    font-size: 0.3rem;
+    font-size: 0.22rem;
     animation-delay: 1s;
 }
 
@@ -351,7 +352,7 @@ html {
 }
 
 .result .reBox .imgBox img {
-    width: 130%;
+    width: 52%;
     z-index : 15 ;
 }
 
@@ -360,7 +361,7 @@ html {
     margin: 0 auto;
     -webkit-overflow-scrolling: touch;
     height: 45%;
-    font-size: 0.25rem;
+    font-size: 0.22rem;
     overflow: scroll;
     color: #000000;
     animation-delay: 2s;
@@ -502,16 +503,17 @@ html {
 .end .bg {
     width: 100%;
     height: 100%;
-    background-image: url(../images/bg1.jpg);
+    /* background-image: url(../images/bg1.jpg); */
     background-size: 100% 100%;
     background-repeat: no-repeat;
     position: relative;
-    padding-top: 0.5rem;
+    /* padding-top: 0.5rem; */
+    background-color: #ff6148;
 }
 
 .end .luoma {
-    width: 70%;
-    margin: 0 auto;
+    /* width: 70%; */
+    /* margin: 0 auto; */
 }
 
 .end .luoma img {

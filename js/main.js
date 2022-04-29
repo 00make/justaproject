@@ -88,7 +88,7 @@ var app = {
 
         console.log(hudata[index]);
         $('.imgBox img').attr('src', 'images/' + (index + 1) + '.png');
-        $('.luoma img').attr('src', 'images/' + (index + 1) + '.png');
+        $('.luoma img').attr('src', 'images/' + (index + 11) + '.jpg');
         $('.huname div').text(hudata[index].t);
         $('.content div').html(hudata[index].r);
         $('.huodong div').text(hudata[index].t);
